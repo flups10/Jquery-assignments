@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery pomodoro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Clock Jquery</h1>
+        <h2><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></h2>
+        <button id="start-button" type="button" class="btn rounded-circle btn-success">Start</button>
+        <button id="reset" type="button" class="btn rounded-circle btn-info">Reset</button>
+        <button id="stop" type="button" class="btn rounded-circle btn-danger">Stop</button>
+
+        <form class="timer-form" action="">
+            <h5>New Timer</h5>
+            Hour <input id="hourSelector" type="number" min="0" max="23" id="hours" maxlength="2" value="0">
+            Minute <input type="number" id="minuteSelector" min="0" max="59" id="minutes" maxlength="2" value="25">
+            Second <input type="number" id="secondSelector" min="0" max="59" id="hours" maxlength="2" value="00">
+        </form>
+    </div>
+    <audio id="alarmSound" preload="auto">
+        <source src="./Wanna_Hear_The_Most_Annoying_Sound_In_The_World-632335.mp3">
+    </audio>
+    <script src="js.js"></script>
+</body>
+</html>
